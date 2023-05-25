@@ -1,0 +1,15 @@
+[header]
+planning = 'Planning'
+actuals = 'Actuals'
+dashboard = 'Dashboard'
+users = 'Users'
+projects = 'Projects'
+userMenu = 'Test TQ'
+faileText = 'Header logo is not displayed'
+
+[loginPage]
+errorMsg = 'Wrong email or password!'
+
+[registerPage]
+userIn = ['John', 'JS']
+errorMsg = 'An account with this email address already exist. Please use another Email OR login to existing one.'
