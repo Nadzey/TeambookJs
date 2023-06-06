@@ -48,3 +48,4 @@ createBookingBtn = "#create-window > div.booking-window__control-buttons__create
 deleteBooking = "button:nth-child(3) p:nth-child(1)"
 closeAddBtn = '[id="closeDidYouKnowWindow"]'
 closeFuterBtn = "#root > div.App > div.tb-banner.mobile_hidden > div > img"
+timeOffBtn = ".booking-window__project-type-option"
