@@ -25,15 +25,30 @@ after(async () => {
 
   describe('New booking', () => {
 
-    it('Create new booking', async () => {
+    it('Create new Project booking', async () => {
       
-      await PlannersPage.createBooking();
+      await PlannersPage.createProjectBooking();
+      
+      expect(await PlannersPage.isBookingCreated()).to.be.true;
+    
+    });
+
+    it('Delete new Project booking', async () => {
+
+      await PlannersPage.deleteBooking()
+      
+      expect(await PlannersPage.isBookingDeleted()).to.be.true;
+    });
+
+    it('Create new Time-Off booking', async () => {
+      
+      await PlannersPage.createTimeOffBooking();
       
       expect(await PlannersPage.isBookingCreated()).to.be.true;
     
     });
     
-    it('Delete new booking', async () => {
+    it('Delete new Time-off booking', async () => {
 
       await PlannersPage.deleteBooking()
       

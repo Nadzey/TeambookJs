@@ -36,6 +36,10 @@ class PlannersPage extends Page {
     get closeFuterBtn() {
         return () => $(selectors.plannersPage.closeFuterBtn);
     }
+
+    get timeOffBtn() {
+        return () => $(selectors.plannersPage.timeOffBtn);
+      }
     
 
     async getCellColor() {
@@ -48,21 +52,32 @@ class PlannersPage extends Page {
     }
 
     async closeAd() {
-        const closeAdBtn = await this.closeAdBtn(); // Call the function to get the element
+        const closeAdBtn = await this.closeAdBtn(); 
         await closeAdBtn.click()
     }
 
     async closeFuter() {
-        const closeFuterBtn = await this.closeFuterBtn(); // Call the function to get the element
+        const closeFuterBtn = await this.closeFuterBtn(); 
         await closeFuterBtn.click()
     }
 
-    async createBooking() {
+    async clickTimeOff() {
+        const timeOffBtn = await this.timeOffBtn();
+          await timeOffBtn.click();
+      }
+
+    async createProjectBooking() {
         await this.closeAd();
         await this.closeFuter();
         await this.clickCell();
-        await this.closeAdBtn();
-        //await this.createBookingBtn.scrollIntoView();
+        await this.createBookingBtn.waitForClickable();
+        await this.createBookingBtn.click();
+      }
+
+      async createTimeOffBooking() {
+        
+        await this.clickCell();
+        await this.clickTimeOff();
         await this.createBookingBtn.waitForClickable();
         await this.createBookingBtn.click();
       }
