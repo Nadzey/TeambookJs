@@ -38,3 +38,13 @@ deleteOrganizationLink = "//p[normalize-space()='Delete Organization']"
 deleteBtn = '#deleteAccountButton'
 compaanyName = '#name'
 deleteAccountBtn = '#deleteAccount'
+
+[plannersPage]
+cell = '.user-row-week'
+booking = '[id^="booking-"]'
+startTimeCheckBx = "body > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > img:nth-child(1)"
+bookingNotes = ".public-DraftStyleDefault-block.public-DraftStyleDefault-ltr"
+createBookingBtn = "#create-window > div.booking-window__control-buttons__create > button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root"
+deleteBooking = "button:nth-child(3) p:nth-child(1)"
+closeAddBtn = '[id="closeDidYouKnowWindow"]'
+closeFuterBtn = "#root > div.App > div.tb-banner.mobile_hidden > div > img"
